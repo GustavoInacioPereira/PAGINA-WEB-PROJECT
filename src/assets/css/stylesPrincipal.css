@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    animation-duration: 1s ;
+    animation-name: transparencia-hr;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 1px;
+    padding: 0; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+.cabecalho {
+    z-index: 3;
+    background-color: rgb(115, 0, 255);
+    width: 50vw;
+    height: 80px;
+    border-radius: 0 0px 40px 0px;
+}
+
+.logoIMG {
+    z-index: 1;
+    height: 80px;
+    width: 13vw;
+}
+
+
+
+.procura {
+    position: absolute;
+    left: 20vw;
+    top: 23px;
+}
+
+.pesquisa-css {
+    border-radius: 20px;
+    height: 30px;
+    width: 20vw;
+}
+
+.more img {
+    cursor: pointer;
+    height: 30px;
+}
+
+.more {
+    position: absolute;
+    right:  3vw;
+    top: 23px;
+    height: 30px;
+    width: 30px;
+}
+
+.morelist {
+  display: none;
+}
+
+
+.more:hover .morelist {
+    animation-duration: 1s ;
+    animation-name: transparencia;
+    display: block;
+    position: relative;
+    right: 170px;  
+    background-color: rgb(115, 0, 255);
+    height: 80vh;
+    width: 200px;
+    border-radius: 20px 0px 20px 20px;
+    z-index: 10;
+}
+
+@keyframes transparencia {
+    from {
+        background-color: rgba(115, 0, 255, 0);
+    }
+
+    to {
+        background-color: rgb(115, 0, 255);;
+    }
+}
+
+@keyframes transparencia-text {
+    from {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+       color: rgb(252, 252, 252);;
+    }
+}
+
+@keyframes transparencia-hr {
+    from {
+        border-top: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    to {
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+}
+
+
+.list {
+    padding: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.o {
+    animation-duration: 1s ;
+    animation-name: transparencia-text;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bannerCentral {
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    z-index: -3;
+    height: 5%;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.bannerdiv {
+    position: absolute;
+    background-size: cover;
+    z-index: -3;
+    width: 100%;
+}
+
+
+
+.lancamentos {
+    display: inline;
+    position: absolute;
+    top: 50vw;
+    background-color: rgb(115, 0, 255);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+
+
+}
+
+
+.tituloLancamentos {
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+}
+
+
+
+.imgFilme {
+
+    padding: 0.2vw;
+    height: 15vw;
+
+}
+
+.slider {
+
+    display: flex;
+    justify-content: center;
+}
